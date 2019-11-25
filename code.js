@@ -1,8 +1,11 @@
+const fs = require ('fs');
+
 console.log ('Begin');
 
-setTimeout ( function(){
-    console.log('Timeout Done');
-}, 5000 );
+fs.readFile('README.md', 'utf-8', function (err, data){
+    if ( err ) return console.log ( err )
+    console.log ( data )
+});
 
 console.log ('End');
 
