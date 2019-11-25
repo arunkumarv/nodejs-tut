@@ -1,4 +1,7 @@
 # nodejs-tut
+- Create an account in github.
+- Use [repl.it](https://repl.it/) if your system is slow - login with github - only for learning purposes, not for production.
+- Any queries comment on my github page itself.
 
 ## Installation
 - [Download nodejs binaries for your architecture](https://nodejs.org/en/download/)
