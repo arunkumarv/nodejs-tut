@@ -14,3 +14,7 @@ let m = mul ( 4, 5 );
 
 console.log ( 'Sum is : ', s );
 console.log ( 'Product is : ', m );
+
+function execute (a, b, method ){ return method(a, b); }
+console.log ('Sum is: ', execute(3, 4, sum) )
+console.log ('Product is: ', execute(3, 4, mul) )
