@@ -2,10 +2,14 @@ const fs = require ('fs');
 
 console.log ('Begin');
 
-fs.readFile('README.md', 'utf-8', function (err, data){
-    if ( err ) return console.log ( err )
-    console.log ( data )
+var promise = new Promise (function(resolve, reject){
+    fs.readFile('README.md', 'utf-8', function (err, data){
+        if ( err ) return reject ( err )
+        resolve ( data )
+    });
 });
 
-console.log ('End');
+promise
+    .then( function(d){ console.log(d); console.log('end'); })
+    .catch( function(e){ console.log(e); console.log ( 'end' )})
 
