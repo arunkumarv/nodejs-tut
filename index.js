@@ -6,6 +6,9 @@ var sum = function ( a, b ){
 
 var mul = function (a, b){ return a * b; }
 
+var d = function(a, b){return a/b;}(15, 5)
+console.log ( 'Division: ', d );
+
 let s = sum ( 4, 5 );
 let m = mul ( 4, 5 );
 
