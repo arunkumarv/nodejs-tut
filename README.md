@@ -16,3 +16,9 @@
 - `node filename` will run the javascript code on nodejs runtime.
 - For development you can use `nodemon` which will rerun the code on every update and save.
 - For that install nodemon globally, `npm install -g nodemon` 
+
+## Create a NodeJS project and installing packages
+- mkdir myProj, cd myProj
+- `npm init` - Keep on pressing enter. This command will create package.json
+- `npm install bcrypt`
+    - this will install `bcrypt` package in node_modules folder and create an entry in `package.json` dependencies section.

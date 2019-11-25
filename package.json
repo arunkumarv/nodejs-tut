@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/arunkumarv/nodejs-tut/issues"
   },
-  "homepage": "https://github.com/arunkumarv/nodejs-tut#readme"
+  "homepage": "https://github.com/arunkumarv/nodejs-tut#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.7"
+  }
 }
