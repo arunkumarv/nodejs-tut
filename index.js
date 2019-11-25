@@ -18,3 +18,12 @@ console.log ( 'Product is : ', m );
 function execute (a, b, method ){ return method(a, b); }
 console.log ('Sum is: ', execute(3, 4, sum) )
 console.log ('Product is: ', execute(3, 4, mul) )
+
+function square ( number, callback ){
+    let out = number * number;
+    callback ( out );
+}
+
+square ( 4, function( result ){
+    console.log ('Square: ', result);
+});
